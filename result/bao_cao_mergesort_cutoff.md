@@ -28,8 +28,8 @@ Cài đặt sử dụng MergeSort top-down, một mảng phụ `aux` được c�
 
 | Hạng mục | Thông số & Cơ chế kiểm soát |
 | :--- | :--- |
-| **Môi trường phần cứng & JVM** | CPU: 13th Gen Intel Core i5 (10 Cores, 12 Logical Processors); RAM: 16 GB; Windows 11 (64-bit); OpenJDK 21 LTS (64-Bit Server VM) — theo thông tin cấu hình trong mẫu báo cáo cũ |
-| **Làm nóng JVM (Warm-up)** | 12 lượt sắp xếp mảng ngẫu nhiên `N = 50,000`, xen kẽ `C=0` và `C=10`; gọi `System.gc()` trước khi đo — theo quy trình trong mã nguồn |
+| **Môi trường phần cứng & JVM** | CPU: 13th Gen Intel Core i5 (10 Cores, 12 Logical Processors); RAM: 16 GB; Windows 11 (64-bit); OpenJDK 21 LTS (64-Bit Server VM) |
+| **Làm nóng JVM (Warm-up)** | 12 lượt sắp xếp mảng ngẫu nhiên `N = 50,000`, xen kẽ `C=0` và `C=10`; gọi `System.gc()` trước khi đo |
 | **Thí nghiệm A (Quét CUTOFF)** | `N = 500,000`, 7 trials, seed `1000..1006`, quét `CUTOFF ∈ {0, 4, 7, 10, 12, 16, 20, 24, 32, 48, 64, 96}` |
 | **4 phân phối kiểm thử** | `random`; `nearly_sorted` (hoán vị ngẫu nhiên 2.5% số lần so với mảng tăng dần); `reverse` (giảm dần); `few_unique` (16 giá trị có thể có) |
 | **Thí nghiệm B (Doubling Ratio)** | Phân phối `random`, `N ∈ {62,500, 125,000, 250,000, 500,000, 1,000,000}`, 5 trials, seed `2000..2004`, cutoff `{0, 7, 10, 24}` |
